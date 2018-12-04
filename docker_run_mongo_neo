@@ -1,0 +1,7 @@
+# run mongo container
+
+docker run -p 27017:27017 --name jupyter-mongo -d mongo
+
+# run neo4j container
+
+docker run --publish=7474:7474 --publish=7687:7687 --name jupyter-neo4j -d neo4j
