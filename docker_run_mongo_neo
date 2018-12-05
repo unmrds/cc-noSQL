@@ -1,6 +1,6 @@
 # run mongo container
 
-docker run -p 27017:27017 --name jupyter-mongo -d mongo
+docker run -p 27017:27017 -v mongo-data:/data/db --name jupyter-mongo -d mongo
 
 # run neo4j container
 
